@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8e9a1; /* Romantic background color */
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #d32f2f; /* Red color for Valentine's Day */
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .heart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        @keyframes pulse {
+            to {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Happy Birthday Day!</h1>
+        <div>
+            <p>"wishing you a vary Happy Birthday,i hope another year filled with joy and brings more happiness than before"</p>
+            <p>- Akash rai</p>
+        </div>
+        <img src="https://emojicdn.elk.sh/❤️" alt="Heart" class="heart" width="50">
+    </div>
+
+    <script>
+        // JavaScript for heart animation
+        const heart = document.querySelector('.heart');
+        heart.style.left = `${Math.random() * 90}vw`; // Random horizontal position
+        heart.style.animationDuration = `${Math.random() * 2 + 1}s`; // Random animation duration
+    </script>
+
+</body>
+
+</html>
